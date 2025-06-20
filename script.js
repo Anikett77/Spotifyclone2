@@ -52,7 +52,7 @@ async function getSongs(folder) {
 
 async function displayAlbums() {
     console.log("displaying albums")
-    let a = await fetch(`/songs/`)
+    let a = await fetch("/albums.json")
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
