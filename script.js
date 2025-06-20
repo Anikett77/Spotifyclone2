@@ -99,7 +99,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function main() {
-    await getSongs("songs/ncs")
+    await getSongs("songs/karan")
     playMusic(songs[0], true)
 
     await displayAlbums();
